@@ -1,41 +1,17 @@
+void setup() {
 size(900, 100);
+}
 
-noStroke();
-
-ellipse(50, 75, 50, 50);
-ellipse(150, 75, 50, 50);
-ellipse(250, 75, 50, 50);
-ellipse(350, 75, 50, 50);
-ellipse(450, 75, 50, 50);
-ellipse(550, 75, 50, 50);
-ellipse(650, 75, 50, 50);
-ellipse(750, 75, 50, 50);
-ellipse(850, 75, 50, 50);
-ellipse(50, 25, 50, 50);
-ellipse(150, 25, 50, 50);
-ellipse(250, 25, 50, 50);
-ellipse(350, 25, 50, 50);
-ellipse(450, 25, 50, 50);
-ellipse(550, 25, 50, 50);
-ellipse(650, 25, 50, 50);
-ellipse(750, 25, 50, 50);
-ellipse(850, 25, 50, 50);
-
-ellipse(100, 75, 50, 50);
-ellipse(200, 75, 50, 50);
-ellipse(300, 75, 50, 50);
-ellipse(400, 75, 50, 50);
-ellipse(500, 75, 50, 50);
-ellipse(600, 75, 50, 50);
-ellipse(700, 75, 50, 50);
-ellipse(800, 75, 50, 50);
-ellipse(900, 75, 50, 50);
-ellipse(100, 25, 50, 50);
-ellipse(200, 25, 50, 50);
-ellipse(300, 25, 50, 50);
-ellipse(400, 25, 50, 50);
-ellipse(500, 25, 50, 50);
-ellipse(600, 25, 50, 50);
-ellipse(700, 25, 50, 50);
-ellipse(800, 25, 50, 50);
-ellipse(900, 25, 50, 50);
+void draw() {
+  
+  background(224);
+  int currentCircle = 0;
+  int desiredCircles = 72;
+  while (currentCircle < desiredCircles) {
+    
+    ellipse(50 + currentCircle * 11, 50, 25, 25);
+    
+    currentCircle = currentCircle + 1;
+    
+  }
+}
