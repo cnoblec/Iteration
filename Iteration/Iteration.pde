@@ -6,11 +6,11 @@ void draw() {
   
   background(224);
   int currentXCircle = 0;
-  int desiredXCircle = 25;
+  int desiredXCircle = 3;
   
   while (currentXCircle < desiredXCircle) {
-      int currentYCircle = 0;
-      int desiredYCircle = 25;
+      int currentYCircle = 1;
+      int desiredYCircle = 2;
       while (currentYCircle < desiredYCircle) {
     
       ellipse(currentXCircle * 25, currentYCircle * 25, 25, 25);
